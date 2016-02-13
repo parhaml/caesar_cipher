@@ -1,6 +1,6 @@
 class Sentence
   #this is what could eventually be encoding and decoding. 
-  #Not very compact but trying to play with OO.
+  #Not very compact but trying to play with OOP.
   #Each part is broken into small functions.
   def initialize(phrase)
     @phrase = phrase.split""
