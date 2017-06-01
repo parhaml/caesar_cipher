@@ -42,13 +42,17 @@ class Sentence
         @answer << letter
       end
     end
-    self.answer
+    puts "Your sentence is: #{@answer}"
   end
 
 end
 
-trial = Sentence.new("What a string!")
-trial.coding_parameters(5)
+puts "What sentence do you want to convert?"
+sent = gets
+trial = Sentence.new(sent)
+puts "How much do you want to shift?"
+shift = gets.to_i
+trial.coding_parameters(shift)
 trial.encode
 
 
